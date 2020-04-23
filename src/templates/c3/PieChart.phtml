@@ -3,9 +3,11 @@
  * @var int $width
  * @var int $height
  * @var bool $enableRatioLabel
+ * @var bool $enableRaw
  * @var string $chartId
  * @var string $valueSuffix
  * @var Tlapnet\Chart\Segment\PieSegment[] $segments
+ * @var Tlapnet\Chart\PieChart[] $raw
  */
 ?>
 <div id="<?php echo $chartId ?>" style="width: <?php echo $width ?>; height: <?php echo $height ?>;">
@@ -15,6 +17,7 @@
 		</div>
 	<?php endif ?>
 </div>
+<?php //dump($raw) ?>
 
 <?php if ($segments): ?>
 	<script type="text/javascript">
@@ -37,16 +40,21 @@
 			<?php endif ?>
 
 			<?php $i = 0 ?>
-			<?php foreach ($segments as $segment): ?>
-				<?php $i++ ?>
+			<?php if (!$enableRaw): ?>
+				<?php foreach ($segments as $segment): ?>
+					<?php $i++ ?>
 
-				var column = [
-					'<?php echo $segment->getTitle() ?>',
-					<?php echo $segment->getValue() ?>
-				];
+					var column = [
+						'<?php echo $segment->getTitle() ?>',
+						<?php echo $segment->getValue() ?>
+					];
 
-				data.columns.push(column);
-			<?php endforeach ?>
+					data.columns.push(column);
+				<?php endforeach ?>
+			<?php else :?>
+				data.columns = <?php echo json_encode($raw) ?>;
+			<?php endif ?>
+			//console.log(data.columns);
 
 			var chart = c3.generate({
 				bindto: '#<?php echo $chartId ?>',

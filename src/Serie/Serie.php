@@ -9,10 +9,21 @@ class Serie extends AbstractSerie
 
 	/** @var Segment[] */
 	private $segments = [];
+	private $array = [];
 
 	public function addSegment(Segment $segment): void
 	{
 		$this->segments[] = $segment;
+	}
+
+	public function addRaw($array): void
+	{
+		$this->array = $array;
+	}
+	
+	public function enableRaw($array): void
+	{
+		$this->array = $array;
 	}
 
 	/**

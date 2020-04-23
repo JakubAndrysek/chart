@@ -1,0 +1,27 @@
+<?php
+/**
+ * @var int $width
+ * @var int $height
+ * @var string $chartId
+ * @var string $valueSuffix
+ * @var array $groups serie_index => string|null
+ * @var Tlapnet\Chart\Serie\Serie[] $series
+ * @var Tlapnet\Chart\Util\C3Adapter $c3Adapter
+ */
+?>
+<div id="<?php echo $chartId ?>" style="width: <?php echo $width ?>; height: <?php echo $height ?>;"></div>
+<script type="text/javascript">
+	(function() {
+		'use strict';
+
+		var chart = c3.generate({
+			bindto: '#<?php echo $chartId ?>',
+			data: {
+				columns: <?php echo  json_encode($raw); ?>
+    		}
+		});
+		//console.log(<?php echo  json_encode($raw); ?>)
+
+		$('#<?php echo $chartId ?>').data('c3-chart', chart);
+	})();
+</script>
