@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace Tlapnet\Chart\Util;
+namespace Jakubandrysek\Chart\Util;
 
-use Tlapnet\Chart\Serie\AbstractSerie;
+use Jakubandrysek\Chart\Serie\AbstractSerie;
 
 class C3Adapter
 {

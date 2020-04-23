@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace Tlapnet\Chart;
+namespace Jakubandrysek\Chart;
 
-use Tlapnet\Chart\Serie\Serie;
+use Jakubandrysek\Chart\Serie\Serie;
 
 class Chart extends AbstractChart
 {

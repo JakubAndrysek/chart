@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace Tlapnet\Chart\Segment;
+namespace Jakubandrysek\Chart\Segment;
 
 class Segment
 {

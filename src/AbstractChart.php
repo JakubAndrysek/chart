@@ -1,10 +1,10 @@
 <?php declare(strict_types = 1);
 
-namespace Tlapnet\Chart;
+namespace Jakubandrysek\Chart;
 
 use LogicException;
 use ReflectionClass;
-use Tlapnet\Chart\Util\C3Adapter;
+use Jakubandrysek\Chart\Util\C3Adapter;
 
 abstract class AbstractChart
 {
@@ -47,7 +47,7 @@ abstract class AbstractChart
 	{
 		return [
 			'c3Adapter' => new C3Adapter(),
-			'chartId' => 'tlapnet-chart-' . self::$rendersCount++,
+			'chartId' => 'Jakubandrysek-chart-' . self::$rendersCount++,
 			'width' => $this->width,
 			'height' => $this->height,
 			'valueSuffix' => $this->valueSuffix,

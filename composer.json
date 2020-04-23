@@ -20,12 +20,12 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "Tlapnet\\Chart\\": "src/"
+      "Jakubandrysek\\Chart\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "Tlapnet\\Chart\\Tests\\": "tests/"
+      "Jakubandrysek\\Chart\\Tests\\": "tests/"
     }
   },
   "scripts": {

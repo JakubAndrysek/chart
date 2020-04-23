@@ -1,9 +1,9 @@
 <?php declare(strict_types = 1);
 
-namespace Tlapnet\Chart\Serie;
+namespace Jakubandrysek\Chart\Serie;
 
 use LogicException;
-use Tlapnet\Chart\Segment\CategorySegment;
+use Jakubandrysek\Chart\Segment\CategorySegment;
 
 class CategorySerie extends AbstractSerie
 {

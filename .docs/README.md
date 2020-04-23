@@ -1,4 +1,4 @@
-# Tlapnet Chart
+# Jakubandrysek Chart
 
 Graphs and charts based on [C3.js](http://c3js.org/)
 
@@ -36,9 +36,7 @@ Graphs are rendered through [C3.js](http://c3js.org/).
 
 
 ```php
-use Tlapnet\Chart\BasicChart;
-
-$chart = new Chart();
+use Jakubandrysek\Chart\BasicChart;
 
 $chart = new BasicChart();
 $basic->addLine("a", array(11,20,22, 18, 35, 16));
@@ -49,9 +47,7 @@ echo $chart;
 or
 - array(String:name, values...)
 ```php
-use Tlapnet\Chart\BasicChart;
-
-$chart = new Chart();
+use Jakubandrysek\Chart\BasicChart;
 
 $chart = new BasicChart();
 $chart->addRaw(array(array("a", 11,20,22, 18, 35, 16), array("b",20,10,21, 0, 14, 8)));
@@ -67,9 +63,9 @@ echo $chart;
 - x (number), y (number)
 
 ```php
-use Tlapnet\Chart\Chart;
-use Tlapnet\Chart\Serie\Serie;
-use Tlapnet\Chart\Segment\Segment;
+use Jakubandrysek\Chart\Chart;
+use Jakubandrysek\Chart\Serie\Serie;
+use Jakubandrysek\Chart\Segment\Segment;
 
 $chart = new Chart();
 
@@ -96,10 +92,10 @@ echo $chart;
 - x (unique key, string|int), y (number)
 
 ```php
-use Tlapnet\Chart\Category;
-use Tlapnet\Chart\CategoryChart;
-use Tlapnet\Chart\Serie\CategorySerie;
-use Tlapnet\Chart\Segment\CategorySegment;
+use Jakubandrysek\Chart\Category;
+use Jakubandrysek\Chart\CategoryChart;
+use Jakubandrysek\Chart\Serie\CategorySerie;
+use Jakubandrysek\Chart\Segment\CategorySegment;
 
 $chart = new CategoryChart([
 	new Category(1, 'January'),
@@ -136,9 +132,9 @@ echo $chart;
 - x (date), y (number)
 
 ```php
-use Tlapnet\Chart\DateChart;
-use Tlapnet\Chart\Serie\DateSerie;
-use Tlapnet\Chart\Segment\DateSegment;
+use Jakubandrysek\Chart\DateChart;
+use Jakubandrysek\Chart\Serie\DateSerie;
+use Jakubandrysek\Chart\Segment\DateSegment;
 use DateTimeImmutable;
 
 $chart = new DateChart();
@@ -171,8 +167,8 @@ echo $chart;
 ### DonutChart
 
 ```php
-use Tlapnet\Chart\DonutChart;
-use Tlapnet\Chart\Segment\DonutSegment;
+use Jakubandrysek\Chart\DonutChart;
+use Jakubandrysek\Chart\Segment\DonutSegment;
 
 $chart = new DonutChart();
 $chart->setTitle(15);
@@ -186,8 +182,8 @@ echo $chart;
 ```
 or
 ```php
-use Tlapnet\Chart\DonutChart;
-use Tlapnet\Chart\Segment\DonutSegment;
+use Jakubandrysek\Chart\DonutChart;
+use Jakubandrysek\Chart\Segment\DonutSegment;
 
 $chart = new DonutChart();
 $chart->setTitle(15);
@@ -204,8 +200,8 @@ echo $chart;
 ### PieChart
 
 ```php
-use Tlapnet\Chart\PieChart;
-use Tlapnet\Chart\Segment\PieSegment;
+use Jakubandrysek\Chart\PieChart;
+use Jakubandrysek\Chart\Segment\PieSegment;
 
 $chart = new PieChart();
 $chart->enableRatioLabel(); // Show percents instead of absolute values
@@ -218,8 +214,8 @@ echo $chart;
 ```
 or
 ```php
-use Tlapnet\Chart\PieChart;
-use Tlapnet\Chart\Segment\PieSegment;
+use Jakubandrysek\Chart\PieChart;
+use Jakubandrysek\Chart\Segment\PieSegment;
 
 $chart = new PieChart();
 $chart->enableRatioLabel(); // Show percents instead of absolute values

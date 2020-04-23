@@ -1,4 +1,4 @@
-# Forked from [tlapnet/chart](https://github.com/tlapnet/chart)
+# Forked from [Tlapnet/chart](https://github.com/Tlapnet/chart)
 
 ## Jakubandrysek Chart
 
@@ -40,7 +40,7 @@ Example more in [Documentation](.docs/README.md)
 		
 		$chart->enableRaw();
 		$chart->addRaw(array(array("a", 1), array("b",2), array("c",3), array("d",12)));
-		$this->template->donutRAW = $chart;
+		echo $chart;
 
 ```
 ## Overview

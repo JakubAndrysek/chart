@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace Tlapnet\Chart;
+namespace Jakubandrysek\Chart;
 
-use Tlapnet\Chart\Segment\PieSegment;
+use Jakubandrysek\Chart\Segment\PieSegment;
 
 class PieChart extends AbstractChart
 {

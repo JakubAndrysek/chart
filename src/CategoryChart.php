@@ -1,10 +1,10 @@
 <?php declare(strict_types = 1);
 
-namespace Tlapnet\Chart;
+namespace Jakubandrysek\Chart;
 
 use LogicException;
-use Tlapnet\Chart\Segment\CategorySegment;
-use Tlapnet\Chart\Serie\CategorySerie;
+use Jakubandrysek\Chart\Segment\CategorySegment;
+use Jakubandrysek\Chart\Serie\CategorySerie;
 
 class CategoryChart extends AbstractChart
 {
