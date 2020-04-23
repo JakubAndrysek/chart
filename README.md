@@ -36,6 +36,8 @@ $ composer require jakubandrysek/chart
 
 Example more in [Documentation](.docs/README.md)
 ```php
+		use Jakubandrysek\Chart\DonutChart;
+		
 		$chart = new DonutChart();
 		$chart->setTitle("15");
 		$chart->setValueSuffix(' pcs');
