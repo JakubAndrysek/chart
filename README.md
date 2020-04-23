@@ -28,6 +28,22 @@ $ composer require tlapnet/chart
 | stable      | `^2.0.0`  | `master` | `>= 7.1` |
 | stable      | `^1.0.0`  | `master` | `>= 5.4` |
 
+## Changes
+- Add Basic chart
+![Chart](.docs/assets/BasicChart.png?raw=true)
+- Add RAW body to Pie chart, Donut chart, Basic chart
+
+Example more in [Documentation](.docs/README.md)
+```php
+		$chart = new DonutChart();
+		$chart->setTitle("15");
+		$chart->setValueSuffix(' pcs');
+		
+		$chart->enableRaw();
+		$chart->addRaw(array(array("a", 1), array("b",2), array("c",3), array("d",12)));
+		$this->template->donutRAW = $chart;
+
+```
 ## Overview
 
 - [Assets](.docs/README.md#assets)

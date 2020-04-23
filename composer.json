@@ -1,12 +1,12 @@
 {
-  "name": "tlapnet/chart",
-  "description": "Graphs and charts based on C3.js",
+  "name": "jakubandrysek/chart",
+  "description": "Graphs and charts based on C3.js - fork",
   "type": "library",
   "license": "MPL-2.0",
-  "homepage": "https://github.com/tlapnet/chart",
+  "homepage": "https://github.com/jakubandrysek/chart",
   "authors": [
     {
-      "name": "Luděk Benedík"
+      "name": "Jakub Andrýsek"
     }
   ],
   "require": {

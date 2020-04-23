@@ -6,6 +6,7 @@ Graphs and charts based on [C3.js](http://c3js.org/)
 
 - [Assets](#Assets)
 - [Graphs](#graphs)
+	- [Basic chart](#basicchart)
 	- [Chart](#chart)
 	- [CategoryChart](#categorychart)
 	- [DateChart](#datechart)
@@ -28,6 +29,38 @@ Graphs are rendered through [C3.js](http://c3js.org/).
 ```
 
 ## Graphs
+
+### BasicChart
+- name(String) and array(values...)
+
+
+
+```php
+use Tlapnet\Chart\BasicChart;
+
+$chart = new Chart();
+
+$chart = new BasicChart();
+$basic->addLine("a", array(11,20,22, 18, 35, 16));
+$basic->addLine("b", array(20,10,21, 0, 14, 8));
+
+echo $chart;
+```
+or
+- array(String:name, values...)
+```php
+use Tlapnet\Chart\BasicChart;
+
+$chart = new Chart();
+
+$chart = new BasicChart();
+$chart->addRaw(array(array("a", 11,20,22, 18, 35, 16), array("b",20,10,21, 0, 14, 8)));
+
+echo $chart;
+```
+
+
+![Chart](./assets/BasicChart.png?raw=true)
 
 ### Chart
 
@@ -151,6 +184,20 @@ $chart->addSegment(new DonutSegment('Item 3', 2));
 
 echo $chart;
 ```
+or
+```php
+use Tlapnet\Chart\DonutChart;
+use Tlapnet\Chart\Segment\DonutSegment;
+
+$chart = new DonutChart();
+$chart->setTitle(15);
+$chart->setValueSuffix(' pcs');
+$chart->enableRatioLabel(); // Show percents instead of absolute values
+$chart->enableRaw();
+$chart->addRaw(array(array("Item 1", 5), array("Item 2",8), array("Item 3",2)));
+
+echo $chart;
+```
 
 ![DonutChart](./assets/DonutChart.png?raw=true)
 
@@ -166,6 +213,19 @@ $chart->setValueSuffix(' pcs');
 $chart->addSegment(new PieSegment('Item 1', 5));
 $chart->addSegment(new PieSegment('Item 2', 8));
 $chart->addSegment(new PieSegment('Item 3', 2));
+
+echo $chart;
+```
+or
+```php
+use Tlapnet\Chart\PieChart;
+use Tlapnet\Chart\Segment\PieSegment;
+
+$chart = new PieChart();
+$chart->enableRatioLabel(); // Show percents instead of absolute values
+$chart->setValueSuffix(' pcs');
+$chart->enableRaw();
+$chart->addRaw(array(array("Item 1", 5), array("Item 2",8), array("Item 3",2)));
 
 echo $chart;
 ```
