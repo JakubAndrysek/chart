@@ -1,4 +1,6 @@
-# Tlapnet Chart
+# Forked from [tlapnet/chart](https://github.com/tlapnet/chart)
+
+## Tlapnet Chart
 
 Graphs and charts based on [C3.js](http://c3js.org/)
 
@@ -15,7 +17,7 @@ Graphs and charts based on [C3.js](http://c3js.org/)
 ## Install
 
 ```
-$ compose require tlapnet/chart
+$ composer require tlapnet/chart
 ```
 
 ## Versions
