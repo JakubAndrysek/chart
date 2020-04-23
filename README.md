@@ -37,15 +37,15 @@ $ composer require jakubandrysek/chart
 
 Example more in [Documentation](.docs/README.md)
 ```php
-		use Jakubandrysek\Chart\DonutChart;
-		
-		$chart = new DonutChart();
-		$chart->setTitle("15");
-		$chart->setValueSuffix(' pcs');
-		
-		$chart->enableRaw();
-		$chart->addRaw(array(array("a", 1), array("b",2), array("c",3), array("d",12)));
-		echo $chart;
+use Jakubandrysek\Chart\DonutChart;
+
+$chart = new DonutChart();
+$chart->setTitle("15");
+$chart->setValueSuffix(' pcs');
+
+$chart->enableRaw();
+$chart->addRaw(array(array("a", 1), array("b",2), array("c",3), array("d",12)));
+echo $chart;
 
 ```
 ## Overview
