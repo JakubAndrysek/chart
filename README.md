@@ -1,5 +1,8 @@
+## Fork
+Forked from [Tlapnet/chart](https://github.com/Tlapnet/chart)
+
 ## Jakubandrysek Chart
-## Forked from [Tlapnet/chart](https://github.com/Tlapnet/chart)
+
 
 Graphs and charts based on [C3.js](http://c3js.org/)
 
