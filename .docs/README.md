@@ -183,7 +183,6 @@ echo $chart;
 or
 ```php
 use Jakubandrysek\Chart\DonutChart;
-use Jakubandrysek\Chart\Segment\DonutSegment;
 
 $chart = new DonutChart();
 $chart->setTitle(15);
@@ -215,7 +214,6 @@ echo $chart;
 or
 ```php
 use Jakubandrysek\Chart\PieChart;
-use Jakubandrysek\Chart\Segment\PieSegment;
 
 $chart = new PieChart();
 $chart->enableRatioLabel(); // Show percents instead of absolute values

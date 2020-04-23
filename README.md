@@ -25,6 +25,7 @@ $ composer require jakubandrysek/chart
 
 | State       | Version   | Branch   | PHP      |
 |-------------|-----------|----------|----------|
+| stable      | `^3.0.1`  | `master` | `>= 7.1` |
 | stable      | `^3.0.0`  | `master` | `>= 7.1` |
 | stable      | `^2.0.0`  | `master` | `>= 7.1` |
 | stable      | `^1.0.0`  | `master` | `>= 5.4` |
