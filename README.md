@@ -1,30 +1,29 @@
 # Forked from [tlapnet/chart](https://github.com/tlapnet/chart)
 
-## Tlapnet Chart
+## Jakubandrysek Chart
 
 Graphs and charts based on [C3.js](http://c3js.org/)
 
 -----
 
-[![Build Status](https://img.shields.io/travis/tlapnet/chart.svg?style=flat-square)](https://travis-ci.org/tlapnet/chart)
-[![Code coverage](https://img.shields.io/coveralls/tlapnet/chart.svg?style=flat-square)](https://coveralls.io/r/tlapnet/chart)
-[![Licence](https://img.shields.io/packagist/l/tlapnet/chart.svg?style=flat-square)](https://packagist.org/packages/tlapnet/chart)
 
-[![Downloads this Month](https://img.shields.io/packagist/dm/tlapnet/chart.svg?style=flat-square)](https://packagist.org/packages/tlapnet/chart)
-[![Downloads total](https://img.shields.io/packagist/dt/tlapnet/chart.svg?style=flat-square)](https://packagist.org/packages/tlapnet/chart)
-[![Latest stable](https://img.shields.io/packagist/v/tlapnet/chart.svg?style=flat-square)](https://packagist.org/packages/tlapnet/chart)
+[![Licence](https://img.shields.io/packagist/l/jakubandrysek/chart.svg?style=flat-square)](https://packagist.org/packages/jakubandrysek/chart)
+
+[![Downloads this Month](https://img.shields.io/packagist/dm/jakubandrysek/chart.svg?style=flat-square)](https://packagist.org/packages/jakubandrysek/chart)
+[![Downloads total](https://img.shields.io/packagist/dt/jakubandrysek/chart.svg?style=flat-square)](https://packagist.org/packages/jakubandrysek/chart)
+[![Latest stable](https://img.shields.io/packagist/v/jakubandrysek/chart.svg?style=flat-square)](https://packagist.org/packages/jakubandrysek/chart)
 
 ## Install
 
 ```
-$ composer require tlapnet/chart
+$ composer require jakubandrysek/chart
 ```
 
 ## Versions
 
 | State       | Version   | Branch   | PHP      |
 |-------------|-----------|----------|----------|
-| dev         | `^2.1.0`  | `master` | `>= 7.1` |
+| stable      | `^3.0.0`  | `master` | `>= 7.1` |
 | stable      | `^2.0.0`  | `master` | `>= 7.1` |
 | stable      | `^1.0.0`  | `master` | `>= 5.4` |
 
@@ -62,6 +61,13 @@ Example more in [Documentation](.docs/README.md)
 <table>
   <tbody>
     <tr>
+      <td align="center">
+        <a href="https://kubaandrysek.cz/">
+            <img width="150" height="150" src="https://avatars2.githubusercontent.com/u/33494544?v=3&s=150">
+        </a>
+        </br>
+        <a href="https://kubaandrysek.cz/">Jakub Andrýsek</a>
+      </td>
       <td align="center">
         <a href="https://github.com/f3l1x">
             <img width="150" height="150" src="https://avatars2.githubusercontent.com/u/538058?v=3&s=150">
