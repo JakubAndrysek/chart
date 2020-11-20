@@ -15,6 +15,8 @@ class DateChart extends AbstractChart
 
 	/** @var bool */
 	private $useTimePrecision = false;
+	private $minValue = null;
+	private $maxValue = null;
 
 	/**
 	 * @param mixed $group Valid PHP array key. If NULL then serie is ungrouped
@@ -30,6 +32,16 @@ class DateChart extends AbstractChart
 		$this->useTimePrecision = true;
 	}
 
+	public function setMinValue($minValue): void
+	{
+		$this->minValue = $minValue;
+	}
+
+	public function setMaxValue($maxValue): void
+	{
+		$this->maxValue = $maxValue;
+	}
+
 	/**
 	 * {@inheritdoc}
 	 */
@@ -41,6 +53,8 @@ class DateChart extends AbstractChart
 		$params['minTime'] = $this->getMinTime();
 		$params['maxTime'] = $this->getMaxTime();
 		$params['useTimePrecision'] = $this->useTimePrecision;
+		$params['minValue'] = $this->minValue;
+		$params['maxValue'] = $this->maxValue;
 
 		return $params;
 	}

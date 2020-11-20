@@ -4,6 +4,8 @@
  * @var int $height
  * @var int $minTime
  * @var int $maxTime
+ * @var int $minValue
+ * @var int $maxValue
  * @var bool $useTimePrecision
  * @var string $chartId
  * @var string $valueSuffix
@@ -29,6 +31,10 @@
 				}
 			},
 			y : {
+			    //min: <?php //echo($minValue) ?>//,
+                //max: <?php //echo($maxValue) ?>//,
+                min:<?php echo($minValue==null?"null":$minValue) ?>,
+                max:<?php echo($maxValue==null?"null":$maxValue) ?>,
 				tick: {
 					format: function (d) { return valueFormatter(d); }
 				}
